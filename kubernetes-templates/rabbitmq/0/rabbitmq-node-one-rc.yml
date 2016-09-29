@@ -32,7 +32,7 @@ spec:
             - name : RABBITMQ_DEFAULT_USER
               value : ${USERNAME}
             - name : RABBITMQ_DEFAULT_PASS
-              value : ${USERNAME}
+              value : ${PASSWORD}
             - name : HOSTNAME
               value : rmq-node-1-svc
           ports:
