@@ -1,5 +1,5 @@
 .catalog:
-  name: heat
+  name: heat with nuage
   version: 0.1
   description: |
     (Experimental) heat with Nuage.

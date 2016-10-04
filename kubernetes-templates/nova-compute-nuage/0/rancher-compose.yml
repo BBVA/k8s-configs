@@ -1,5 +1,5 @@
 .catalog:
-  name: nova-compute
+  name: nova-compute with nuage
   version: 0.1
   description: |
     (Experimental) nova-compute with nuage.

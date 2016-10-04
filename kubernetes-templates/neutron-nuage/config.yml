@@ -1,4 +1,4 @@
-name: neutron
+name: neutron with nuage
 description: |
   (Experimental) neutron with nuage
 version: 0.1

@@ -1,5 +1,5 @@
 .catalog:
-  name: horizon
+  name: horizon with nuage
   version: 0.1
   description: |
     (Experimental) horizon with nuage.

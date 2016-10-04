@@ -1,5 +1,5 @@
-name: nova-compute
+name: nova-compute with nuage
 description: |
   (Experimental) nova-compute with nuage
 version: 0.1
-category: nova-compute
+category: nova-compute with nuage
