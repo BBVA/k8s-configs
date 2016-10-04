@@ -50,6 +50,3 @@ spec:
               value: mysql
             - name: MYSQL_PASSWORD
               value: mysql
-            - name: MYSQL_ROOT_PASSWORD
-              value: 2dda738b88107fe021eec85724136e4f
-
