@@ -2,6 +2,6 @@
   name: horizon
   version: 0.1
   description: |
-    (Experimental) horizon.
+    (Experimental) horizon with nuage.
   minimum_rancher_version: v0.59.0
-  uuid: horizon-0
+  uuid: horizon-nuage-0

@@ -14,7 +14,7 @@ spec:
         app: nova-compute
     spec:
       containers:
-      - image: nova-compute:v0.2
+      - image: nova-compute:v0.1-nuage
         imagePullPolicy: Always
         name: nova-compute
         securityContext:

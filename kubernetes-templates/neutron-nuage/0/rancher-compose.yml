@@ -2,6 +2,6 @@
   name: neutron
   version: 0.1
   description: |
-    (Experimental) neutron.
+    (Experimental) neutron with nuage.
   minimum_rancher_version: v0.59.0
   uuid: neutron-0

@@ -16,7 +16,7 @@ spec:
         app: heat
     spec:
       containers:
-      - image: heat:v0.2
+      - image: heat:v0.1-nuage
         imagePullPolicy: Always
         name: heat
         resources:
