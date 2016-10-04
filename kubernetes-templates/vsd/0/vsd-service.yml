@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nuage-vsd
+  labels:
+    app: nuage-vsd
+spec:
+  ports:
+    - port: 22
+      name: ssh
+    - port: 9200
+      name: stats
+    - port: 9300
+      name: stats2
+    - port: 39090
+      name: stats-collector
+    - port: 29090
+      name: stats-collector2
+    - port: 5222
+      name: xmpp
+    - port: 123
+      name: ntp
+    - port: 8443
+      name: https
+  selector:
+    app: nuage-vsd

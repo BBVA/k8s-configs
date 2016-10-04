@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    app: nuage-vsd
+  name: nuage-vsd
+  namespace: default
+spec:
+  selector:
+    app: nuage-vsd
+  template:
+    metadata:
+      labels:
+        app: nuage-vsd
+    spec:
+      containers:
+      - image: vsd:v0.1-nuage
+        imagePullPolicy: Always
+        securityContext:
+          privileged: true
+        name: nuage-vsd
+        tty: true
+        stdin: true
+        ports:
+        - containerPort: 22
+          protocol: TCP
+        - containerPort: 9200
+          protocol: TCP
+        - containerPort: 9300
+          protocol: TCP
+        - containerPort: 39090
+          protocol: TCP
+        - containerPort: 29090
+          protocol: TCP
+        - containerPort: 5222
+          protocol: TCP
+        - containerPort: 123
+          protocol: TCP
+        - containerPort: 8443
+          protocol: TCP
+
