@@ -6,6 +6,9 @@ metadata:
   name: rmq-node-2-svc
 spec:
   ports:
+    - port: 5672
+      protocol : TCP
+      name : default
     - port: 4369
       protocol : TCP
       name : epmd-port
