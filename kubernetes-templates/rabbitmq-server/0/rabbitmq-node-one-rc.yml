@@ -15,6 +15,7 @@ spec:
       containers:
         - name: rmq
           image: rabbitmq-server:v0.2
+          imagePullPolicy: Always
           ports:
             - containerPort: 15672
               protocol : TCP
