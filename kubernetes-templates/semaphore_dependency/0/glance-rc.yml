@@ -1,0 +1,24 @@
+#### glance replication controller
+
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    app: semaphore_dependency
+  name: semaphore_dependency
+  namespace: default
+spec:
+  selector:
+    app: semaphore_dependency
+  template:
+    metadata:
+      labels:
+        app: semaphore_dependency
+    spec:
+      containers:
+      - image: semaphore_dependency:v0.2
+        imagePullPolicy: Always
+        name: semaphore_dependency
+        ports:
+        - containerPort: 1936
+          protocol: TCP

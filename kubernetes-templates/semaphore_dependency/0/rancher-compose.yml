@@ -1,0 +1,7 @@
+.catalog:
+  name: semaphore_dependency
+  version: 0.1
+  description: |
+    (Experimental) semaphore_dependency.
+  minimum_rancher_version: v0.59.0
+  uuid: semaphore_dependency-0

@@ -1,0 +1,5 @@
+name: semaphore_dependency
+description: |
+  (Experimental) checks the dependencies of a service
+version: 0.2
+category: service
