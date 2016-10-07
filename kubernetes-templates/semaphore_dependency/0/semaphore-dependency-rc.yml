@@ -4,21 +4,21 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    app: semaphore_dependency
-  name: semaphore_dependency
+    app: semaphore-dependency
+  name: semaphore-dependency
   namespace: default
 spec:
   selector:
-    app: semaphore_dependency
+    app: semaphore-dependency
   template:
     metadata:
       labels:
-        app: semaphore_dependency
+        app: semaphore-dependency
     spec:
       containers:
-      - image: semaphore_dependency:v0.2
+      - image: semaphore-dependency:v0.2
         imagePullPolicy: Always
-        name: semaphore_dependency
+        name: semaphore-dependency
         ports:
         - containerPort: 1936
           protocol: TCP
