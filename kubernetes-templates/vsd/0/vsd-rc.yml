@@ -2,23 +2,23 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    app: nuage-vsd
-  name: nuage-vsd
+    app: vsd
+  name: vsd
   namespace: default
 spec:
   selector:
-    app: nuage-vsd
+    app: vsd
   template:
     metadata:
       labels:
-        app: nuage-vsd
+        app: vsd
     spec:
       containers:
       - image: vsd:v0.1-nuage
         imagePullPolicy: Always
         securityContext:
           privileged: true
-        name: nuage-vsd
+        name: vsd
         tty: true
         stdin: true
         ports:

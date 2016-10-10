@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nuage-vsd
+  name: vsd
   labels:
-    app: nuage-vsd
+    app: vsd
 spec:
   ports:
     - port: 22
@@ -23,4 +23,4 @@ spec:
     - port: 8443
       name: https
   selector:
-    app: nuage-vsd
+    app: vsd
