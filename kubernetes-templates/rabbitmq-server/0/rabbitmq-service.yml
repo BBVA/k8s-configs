@@ -11,4 +11,4 @@ spec:
       name : default
   selector:
     type: rmq-node
-  type : NodePort
+
