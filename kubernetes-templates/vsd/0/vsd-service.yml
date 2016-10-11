@@ -5,6 +5,7 @@ metadata:
   labels:
     app: vsd
 spec:
+  clusterIP: none
   ports:
     - port: 22
       name: ssh
