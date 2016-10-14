@@ -16,7 +16,7 @@ spec:
         app: glance
     spec:
       containers:
-      - image: glance:v0.2
+      - image: glance:v0.3
         imagePullPolicy: Always
         name: glance
         ports:

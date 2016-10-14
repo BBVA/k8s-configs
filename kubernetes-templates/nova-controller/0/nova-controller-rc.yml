@@ -16,7 +16,7 @@ spec:
         app: nova-controller
     spec:
       containers:
-      - image: nova-controller:v0.2
+      - image: nova-controller:v0.3
         imagePullPolicy: Always
         securityContext:
           privileged: true

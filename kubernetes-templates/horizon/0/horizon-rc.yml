@@ -17,7 +17,7 @@ spec:
         app: horizon
     spec:
       containers:
-      - image: horizon:v0.2
+      - image: horizon:v0.3
         imagePullPolicy: Always
         name: horizon
         ports:

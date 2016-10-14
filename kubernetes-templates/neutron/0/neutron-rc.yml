@@ -17,7 +17,7 @@ spec:
         app: neutron
     spec:
       containers:
-      - image: neutron:v0.2
+      - image: neutron:v0.3
         imagePullPolicy: Always
         securityContext:
           privileged: true

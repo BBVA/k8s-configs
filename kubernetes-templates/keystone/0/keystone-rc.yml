@@ -16,7 +16,7 @@ spec:
         app: keystone
     spec:
       containers:
-      - image: keystone:v0.2
+      - image: keystone:v0.3
         imagePullPolicy: Always
         name: keystone
         ports:
