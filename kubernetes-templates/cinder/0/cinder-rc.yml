@@ -1,4 +1,4 @@
-japiVersion: v1
+apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
@@ -14,13 +14,9 @@ spec:
         app: cinder
     spec:
       containers:
-      - image: cinder:v0.2
+      - image: cinder:v0.3
         imagePullPolicy: Always
         name: cinder
-        resources:
-          limits:
-            cpu: 300m
-            memory: 200Mi
         ports:
         - containerPort: 8776
           protocol: TCP
