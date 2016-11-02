@@ -13,6 +13,7 @@ spec:
       labels:
         app: cinder
     spec:
+      hostNetwork: true
       containers:
       - image: cinder:v0.3
         imagePullPolicy: Always
@@ -20,10 +21,3 @@ spec:
         ports:
         - containerPort: 8776
           protocol: TCP
-        volumeMounts:
-        - mountPath: /var/lib/cinder/nfs
-          name: cinder-volume-dir
-      volumes:
-      - name: cinder-volume-dir
-        hostPath:
-          path: /opt/cinder
