@@ -17,14 +17,8 @@ spec:
       - image: cinder:v0.3
         imagePullPolicy: Always
         name: cinder
+        securityContext:
+          privileged: true
         ports:
         - containerPort: 8776
           protocol: TCP
-        volumeMounts:     
-          - name: www      
-            mountPath: "/var/tmp/"
-      volumes:
-        - name: www
-          nfs:
-            server: 172.16.26.11
-            path: "/vol_NFS_CLOUD_EP_cinder1"
