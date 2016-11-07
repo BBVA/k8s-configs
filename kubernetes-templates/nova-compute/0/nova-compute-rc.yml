@@ -14,6 +14,11 @@ spec:
         app: nova-compute
     spec:
       containers:
+      - image: nova-compute-neutron:v0.4
+        imagePullPolicy: Always
+        name: nova-compute-neutron
+        securityContext:
+          privileged: true
       - image: nova-compute:v0.3
         imagePullPolicy: Always
         name: nova-compute
