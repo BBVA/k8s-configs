@@ -19,7 +19,7 @@ spec:
         name: nova-compute-neutron
         securityContext:
           privileged: true
-      - image: nova-compute:v0.3
+      - image: nova-compute:v0.4
         imagePullPolicy: Always
         name: nova-compute
         securityContext:
