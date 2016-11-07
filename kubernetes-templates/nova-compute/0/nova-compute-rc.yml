@@ -19,6 +19,9 @@ spec:
         name: nova-compute-neutron
         securityContext:
           privileged: true
+        volumeMounts:
+        - mountPath: /lib/modules
+          name: "modules"
       - image: nova-compute:v0.4
         imagePullPolicy: Always
         name: nova-compute
