@@ -14,14 +14,18 @@ spec:
         app: nova-compute
     spec:
       containers:
-      - image: nova-compute-neutron:v0.4
+      - image: nova-compute-libvirt:v0.4
         imagePullPolicy: Always
-        name: nova-compute-neutron
+        name: nova-compute-libvirt
         securityContext:
           privileged: true
         volumeMounts:
         - mountPath: /lib/modules
           name: "modules"
+        - mountPath: /var/lib/libvirt
+          name: "libvirt"
+        - mountPath: /var/lib/nova/instances
+          name: "nova"
       - image: nova-compute:v0.4
         imagePullPolicy: Always
         name: nova-compute
