@@ -32,6 +32,8 @@ spec:
         securityContext:
           privileged: true
         volumeMounts:
+        - mountPath: /proc/sys/net/bridge
+          name: "procbridge"
         - mountPath: /var/lib/libvirt
           name: "libvirt"
         - mountPath: /var/lib/nova/instances
@@ -39,6 +41,9 @@ spec:
         - mountPath: /lib/modules
           name: "modules"
       volumes:
+      - hostPath:
+          path: /proc/sys/net/bridge
+        name: procbridge
       - hostPath:
           path: /lib/modules
         name: modules
