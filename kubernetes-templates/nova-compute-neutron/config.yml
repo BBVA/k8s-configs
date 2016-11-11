@@ -1,0 +1,5 @@
+name: nova-compute-neutron
+description: |
+  (Experimental) nova-compute-neutron
+version: 0.1
+category: nova-compute-neutron
