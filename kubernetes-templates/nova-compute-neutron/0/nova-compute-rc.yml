@@ -2,16 +2,16 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    app: nova-compute-neutron
-  name: nova-compute-neutron
+    app: nova-compute-neutr0n
+  name: nova-compute-neutr0n
   namespace: default
 spec:
   selector:
-    app: nova-compute-neutron
+    app: nova-compute-neutr0n
   template:
     metadata:
       labels:
-        app: nova-compute-neutron
+        app: nova-compute-neutr0n
     spec:
       containers:
       - image: nova-compute-libvirt:v0.4
@@ -28,7 +28,7 @@ spec:
           name: "nova"
       - image: nova-compute-neutron:v0.1
         imagePullPolicy: Always
-        name: nova-compute-neutron
+        name: nova-compute-neutr0n
         securityContext:
           privileged: true
         volumeMounts:

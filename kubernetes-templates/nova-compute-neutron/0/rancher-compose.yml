@@ -1,7 +1,7 @@
 .catalog:
-  name: nova-compute-neutron
+  name: nova-compute-neutr0n
   version: 0.1
   description: |
-    (Experimental) nova-compute-neutron.
+    (Experimental) nova-compute-neutr0n.
   minimum_rancher_version: v0.59.0
-  uuid: nova-compute-neutron0
+  uuid: nova-compute-neutr0n0
