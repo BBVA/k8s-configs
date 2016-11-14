@@ -17,7 +17,7 @@ spec:
         app: horizon
     spec:
       containers:
-      - image: horizon:v0.1-nuage
+      - image: horizon:v0.3-nuage
         imagePullPolicy: Always
         name: horizon
         ports:
