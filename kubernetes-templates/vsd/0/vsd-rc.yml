@@ -14,7 +14,7 @@ spec:
         app: vsd
     spec:
       containers:
-      - image: vsd:v0.1-nuage
+      - image: vsd:4.0R4
         imagePullPolicy: Always
         securityContext:
           privileged: true
