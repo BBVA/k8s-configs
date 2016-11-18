@@ -2,21 +2,33 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    app: nova-compute
-  name: nova-compute
+    app: nova-compute-neutr0n
+  name: nova-compute-neutr0n
   namespace: default
 spec:
   selector:
-    app: nova-compute
+    app: nova-compute-neutr0n
   template:
     metadata:
       labels:
-        app: nova-compute
+        app: nova-compute-neutr0n
     spec:
       containers:
-      - image: nova-compute:v0.3
+      - image: nova-compute-libvirt:v0.4
         imagePullPolicy: Always
-        name: nova-compute
+        name: nova-compute-libvirt
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: /lib/modules
+          name: "modules"
+        - mountPath: /var/lib/libvirt
+          name: "libvirt"
+        - mountPath: /var/lib/nova/instances
+          name: "nova"
+      - image: nova-compute-neutron:v0.1
+        imagePullPolicy: Always
+        name: nova-compute-neutr0n
         securityContext:
           privileged: true
         volumeMounts:
