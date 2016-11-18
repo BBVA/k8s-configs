@@ -1,0 +1,5 @@
+name: config-loader
+description: |
+  (Experimental) Config Loader to etcd with nuage
+version: 0.1
+category: etcd

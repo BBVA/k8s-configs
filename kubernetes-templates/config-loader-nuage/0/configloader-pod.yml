@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-loader-nuage
+spec:
+  restartPolicy: Never
+  containers:
+    - image: config-loader:0.1-nuage
+      imagePullPolicy: Always
+      name: config-loader-nuage
+
+
