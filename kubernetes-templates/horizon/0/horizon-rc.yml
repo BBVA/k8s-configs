@@ -17,7 +17,7 @@ spec:
         app: horizon
     spec:
       containers:
-      - image: horizon:v0.3
+      - image: bbvainnotech/k8s-horizon:latest
         imagePullPolicy: Always
         name: horizon
         ports:

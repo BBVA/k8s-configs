@@ -14,7 +14,7 @@ spec:
         app: nova-compute
     spec:
       containers:
-      - image: nova-compute-libvirt:v0.4
+      - image: bbvainnotech/libvirtd:latest
         imagePullPolicy: Always
         name: nova-compute-libvirt
         securityContext:

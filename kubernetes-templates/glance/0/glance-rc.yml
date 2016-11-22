@@ -16,7 +16,7 @@ spec:
         app: glance
     spec:
       containers:
-      - image: glance:v0.3
+      - image: bbvainnotech/k8s-glance:latest
         imagePullPolicy: Always
         name: glance
         ports:

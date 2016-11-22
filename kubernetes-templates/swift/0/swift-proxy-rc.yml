@@ -16,7 +16,7 @@ spec:
         app: swift
     spec:
       containers:
-      - image: swift:v0.2
+      - image: bbvainnotech/k8s-swift:latest
         imagePullPolicy: Always
         name: swift
         resources:

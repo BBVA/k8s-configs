@@ -30,7 +30,7 @@ spec:
         unit: pxc-cluster
     spec:
       containers:
-        - image: galera-mysql:v0.2
+        - image: bbvainnotech/k8s-galera-mysql:latest
           name: pxc-node2
           ports:
             - containerPort: 3306

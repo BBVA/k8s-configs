@@ -17,7 +17,7 @@ spec:
         app: heat
     spec:
       containers:
-      - image: heat:v0.2
+      - image: bbvainnotech/k8s-heat:latest
         imagePullPolicy: Always
         name: heat
         resources:

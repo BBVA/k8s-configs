@@ -16,7 +16,7 @@ spec:
         app: nova-controller
     spec:
       containers:
-      - image: nova-controller:v0.3
+      - image: bbvainnotech/k8s-nova-controller:latest
         imagePullPolicy: Always
         securityContext:
           privileged: true

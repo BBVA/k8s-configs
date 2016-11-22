@@ -5,7 +5,7 @@ metadata:
 spec:
   restartPolicy: Never
   containers:
-    - image: config-loader:v0.2
+    - image: bbvainnotech/k8s-config-loader:latest
       imagePullPolicy: Always
       name: config-loader
 

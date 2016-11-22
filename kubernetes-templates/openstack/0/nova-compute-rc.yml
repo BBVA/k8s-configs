@@ -14,7 +14,7 @@ spec:
         app: nova-compute-neutr0n
     spec:
       containers:
-      - image: nova-compute-libvirt:v0.4
+      - image: bbvainnotech/libvirtd:latest
         imagePullPolicy: Always
         name: nova-compute-libvirt
         securityContext:
@@ -26,7 +26,7 @@ spec:
           name: "libvirt"
         - mountPath: /var/lib/nova/instances
           name: "nova"
-      - image: nova-compute-neutron:v0.1
+      - image: bbvainnotech/k8s-nova-compute-neutron:latest
         imagePullPolicy: Always
         name: nova-compute-neutr0n
         securityContext:

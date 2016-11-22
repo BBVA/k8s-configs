@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: rmq
-          image: rabbitmq-server:v0.2
+          image: bbvainnotech/k8s-rabbitmq-server:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 15672
