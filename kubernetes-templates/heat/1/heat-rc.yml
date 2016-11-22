@@ -5,7 +5,7 @@ kind: ReplicationController
 metadata:
   labels:
     app: heat
-  name: heat
+  name: heat-nuage
   namespace: default
 spec:
   selector:
@@ -16,9 +16,9 @@ spec:
         app: heat
     spec:
       containers:
-      - image: heat:latest-nuage
+      - image: k8s-heat:latest-nuage
         imagePullPolicy: Always
-        name: heat
+        name: heat-nuage
         resources:
           limits:
             cpu: 300m

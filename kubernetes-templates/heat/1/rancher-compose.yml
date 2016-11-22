@@ -1,6 +1,6 @@
 .catalog:
-  name: heat with nuage
-  version: 0.1
+  name: heat
+  version: 0.1-nuage
   description: |
     (Experimental) heat with Nuage.
   minimum_rancher_version: v0.59.0
