@@ -1,6 +1,6 @@
 .catalog:
   name: vsd
-  version: 0.1
+  version: 4.0R4
   description: |
     (Experimental) VSD Nuage.
   minimum_rancher_version: v0.59.0
