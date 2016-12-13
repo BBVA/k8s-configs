@@ -24,7 +24,7 @@ spec:
           name: "modules"
         - mountPath: /var/lib/libvirt
           name: "libvirt"
-        - mountPath: /var/lib/nova/instances
+        - mountPath: /var/lib/nova
           name: "nova"
       - image: bbvainnotech/k8s-nova-compute-neutron:latest
         imagePullPolicy: Always
@@ -34,7 +34,7 @@ spec:
         volumeMounts:
         - mountPath: /var/lib/libvirt
           name: "libvirt"
-        - mountPath: /var/lib/nova/instances
+        - mountPath: /var/lib/nova
           name: "nova"
         - mountPath: /lib/modules
           name: "modules"
